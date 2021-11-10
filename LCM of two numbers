@@ -1,0 +1,14 @@
+# Python code for LCM
+num1 = int(input("Enter first number:")) 
+num2 = int(input("Enter second number:"))      # Taking input 
+
+if num1>num2:
+    greater = num1
+else:
+    greater = num2                             # Storing larger variable.
+while(True):                                   # Using while loop as we dont know the limit
+    if greater%num1==0 and greater%num2==0:    # Checking out condition for minimum divisiblity
+        lcm = greater
+        break             
+    greater = greater + 1                             
+print(lcm)                                     # Printing LCM
