@@ -1,0 +1,25 @@
+octal = int(input("Enter number:"))       # Taking input
+decimal = 0
+binary = 0
+i = 0
+
+while(octal!=0):
+    rem = octal % 10
+    decimal += rem * 8**i                 # 1st while loop is to convert it into decimal
+    i += 1
+    octal = octal // 10
+i = 1
+while(decimal != 0):
+    rem1 = decimal % 2
+    binary += rem1 * i                    # 2nd while loop is to convert decimal to binary
+    decimal = decimal // 2
+    i = i * 10
+print(binary)
+
+#------------ OR------------
+
+'''
+octal = int(input("Enter number:"))
+binary = bin(octal)
+print(binary)
+'''
