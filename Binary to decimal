@@ -11,3 +11,4 @@ while(num>0):
     i = i + 1                          # Increasing power
     num = num // 10                    # Removing the last digit from num.
 print(decimal)
+
