@@ -1,0 +1,27 @@
+''' Converting binary to octal there are two ways we can do it in python by using inbuilt function or by regular method which is we convert it in decimal and then in octal'''
+
+num = int(input("Enter number:"))        # input
+decimal = 0
+i = 0
+while(num>0):
+    rem = num%10
+    decimal = decimal + rem * 2**i
+    i = i + 1
+    num = num // 10
+octal = 0                                # Same procedure to convert in decimal
+i=1
+ 
+while(decimal>0):                        # Iterate until decimal becomes less then 0
+    octal = octal + (decimal%8)*i        # Dividing by 8 and multipling by i each time
+    decimal = decimal//8
+    i = i*10
+print(octal)        
+
+''' 
+--------------------------------------- OR ----------------------------------------
+num = int(input("Enter number:"))
+#convert using oct() function
+Oct_num = oct(num)
+#print number
+print(Oct_num) 
+'''
