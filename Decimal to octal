@@ -1,0 +1,15 @@
+dec_num = int(input("Enter number:"))    # Taking input
+oct_num = 0
+i = 1             
+while(dec_num!=0):                       # Defining condition as >0
+    rem = dec_num % 8                    # Getting reminder 
+    oct_num += rem*i                     # Storing it in octal_num
+    dec_num = dec_num // 8               # Removing last digit of dec_num to perform next loop 
+    i = i * 10                      
+print(oct_num)
+
+#------------------- OR -----------------------
+
+'''dec_num = int(input("Enter number:"))
+oct_num = oct(dec_num)
+print(oct_num)'''
