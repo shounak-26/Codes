@@ -1,0 +1,13 @@
+''' Binary to decimal in python 
+10 = we start from right of number 
+10 = 2**1 * 1 + 2**0 * 0 = 2    ** Is power '''
+
+num = int(input("Enter number:"))      # Taking input
+decimal = 0
+i = 0                                  # Intializing for power
+while(num>0):
+    rem = num%10                       # For starting from reverse
+    decimal = decimal + rem * 2**i     # Storing in variable
+    i = i + 1                          # Increasing power
+    num = num // 10                    # Removing the last digit from num.
+print(decimal)
