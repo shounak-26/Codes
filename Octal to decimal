@@ -1,0 +1,10 @@
+octal = int(input("Enter number:"))    # Taking input
+decimal = 0
+i = 0
+
+while(octal!=0):                       # Runnning while loop
+    rem = octal % 10                   # Taking reminder
+    decimal += rem * 8**i              # Performing operation which we are multiplying with remainder 
+    i += 1
+    octal = octal // 10                # Taking quotient 
+print(decimal)
