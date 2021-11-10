@@ -1,0 +1,11 @@
+num1 = int(input("Enter first number:"))     # accepting two variiables
+num2 = int(input("Enter second number:"))
+arr = []                                     # Creating a list for storing all multiple factors of two numbers
+if num1>num2:
+    smaller = num2                     
+else:
+    smaller =num1
+for i in range (1,smaller+1):                # Applying loop for the range 
+    if num1%i==0 and num2%i==0:
+        arr.append(i)                        # Appending values which is satisfying the above condition in list so that we can directly find maximum number.
+print(max(arr))
