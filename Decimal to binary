@@ -5,3 +5,12 @@ def binarytodecimal(num):
         
 num = int(input("Enter number:"))
 binarytodecimal(num)
+
+#------------------------- OR --------------------------
+'''
+#take decimal number
+dec_num = int(input())
+#convert decimal number to binary
+bin_num = bin(dec_num)
+#print number
+print(bin_num) '''
