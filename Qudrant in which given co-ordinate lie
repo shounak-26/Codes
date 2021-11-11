@@ -1,0 +1,13 @@
+# This is a simple program in which we can find out the qudrants of given co-ordinate in python by using if-elif-else statement.
+
+x = int(input("x co-ordinate:"))
+y = int(input("y co-ordinate:"))
+
+if (x>0 and y>0):
+    print("x and y lies in Ist quadrant")
+elif(x<0 and y>0):
+    print("x and y lies in IInd quadrant")
+elif(x<0 and y<0):
+    print("x and y lies in IIIrd quadrant")
+else:
+    print("x and y lies at origin")
