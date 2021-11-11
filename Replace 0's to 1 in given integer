@@ -1,0 +1,18 @@
+n = int(input('Enter integer:'))        # Accepting number
+n = str(n)                              # Convert the datatype into string so that we can store in into list and sort them
+n = list(n)                             # Converting string into list or we can just use map function n = list(map(int,str(n)) it is same. 
+r = ''                                  # We are having this empty list so that we can store the values which are not 0's
+for i in range (len(n)):                # Running loop from list
+    if (n[i] == '0'):                   # Checking condition
+        n[i] = '1'                      # Pay attention on assignment and equal to 
+    r = r + n[i]                        # Storing value                  
+print(int(r))     
+
+
+#----------------OR----------------
+# There is this other way we can directly convert it into string and then we can use replace keyword by giving two parameters.
+
+'''n = int(input('Enter integer:'))
+n = str(n)
+result = n.replace('0','1')
+print(result)'''
