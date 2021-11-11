@@ -1,0 +1,7 @@
+import math
+N = int(input('Enter the number  :'))
+R = int(input('Enter the number  :'))
+nume = math.factorial(N)
+deno = math.factorial(N-R)
+result = nume//deno
+print(result)
