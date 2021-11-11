@@ -1,0 +1,6 @@
+# Program to find the max number of handshakes made by person when he entered in room to the group of people.
+# We can use formula which is n*(n-1)/2
+
+n = int(input("Enter number of people:"))
+result = (n*(n-1))//2
+print(result)
