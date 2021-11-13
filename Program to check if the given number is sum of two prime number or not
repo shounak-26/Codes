@@ -1,0 +1,20 @@
+num = int(input('Enter number:'))                                 # Taking input for numbber
+arr = []                                                          # Definning an empty array
+
+for i in range (2,num):                                           # In this two for loop we will just find the prime number and then just add it into array.
+    flag = 0
+    for j in range(2,i):
+        if i % j == 0:
+            flag = 1
+    if flag == 0:
+        arr.append(i)                                              # Appending the given number inside the array.
+
+flag = 0
+for i in range (len(arr)):                                         # In this what we are doing we are looping through the number.
+    for j in range (i+1,len(arr)):
+        if(arr[i] + arr[j]) == num:                                # After looping we are checking the conditions if it is satisfing or not.
+            flag = 1
+            print(f' {arr[i]} + {arr[j]} gives us {num}')
+            break
+if flag == 0:
+    print('No prime number is there.')
