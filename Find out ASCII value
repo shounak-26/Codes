@@ -1,0 +1,3 @@
+temp = input('Enter the charcter')     # Taking input
+ascivalue = ord(temp)                  # There is inbuilt function which tell us the ASCII value.
+print(ascivalue)
