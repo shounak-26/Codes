@@ -1,0 +1,5 @@
+num = int(input("Enter the number: "))             
+digit = int(input("Enter the digit: "))               # Taking input for number and digit
+num = str(num)
+digit = str(digit)                                    # Converting into string
+print(num.count(digit))                               # For string we have count keyword that count the number of times it occur in string.
