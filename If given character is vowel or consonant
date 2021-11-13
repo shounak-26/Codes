@@ -1,0 +1,7 @@
+char = str(input('Enter character:'))                       # Taking character as an input
+list1 = ['a','i','e','o','u','A','I','E','O','U']           # Creating list of vowels
+output = char in list1                                      # Using membership operator
+if output == True:
+    print(f'{char} is vowel')                               # Cheking condition
+else:
+    print(f'{char} is consonenet')
