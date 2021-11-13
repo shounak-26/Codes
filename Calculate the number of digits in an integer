@@ -1,0 +1,3 @@
+num = int(input("Enter number:"))       # Entering the value
+num = str(num)                          # Converting into string and calculating length. 
+print(len(num))
