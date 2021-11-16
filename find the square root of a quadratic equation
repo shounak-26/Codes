@@ -1,0 +1,16 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a == 0:
+    print("No roots")
+else:
+    half = ((b*b) - (4*a*c))
+    half = half ** 0.5
+    if (half > 0):
+        print( (-b + half)/(2*a))
+        print((-b - half)/(2*a))
+    elif half == 0:
+        print((-b)/2*a)
+    else:
+        print((-b-half)/2*a)
