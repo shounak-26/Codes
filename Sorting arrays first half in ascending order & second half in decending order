@@ -1,0 +1,9 @@
+n = int(input())
+arr = list(map(int,input().strip().split()))[0:n]        # We have taken a array input for particular range
+ls = []                                                  # Created a empty list for first half element's 
+for i in range (0,(n//2)):                               # Running loop in half
+    ls.append(arr[i])                                    # Appending elements in empty array.
+del arr[0:4]                                             # Removing appended elements.
+ls.sort()                                                # Sorting two list first in ascending and second in descending. 
+arr.sort(reverse = True)
+print(ls+arr)                                            # Combining both of them.
