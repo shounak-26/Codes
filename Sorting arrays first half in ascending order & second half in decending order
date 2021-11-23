@@ -7,3 +7,14 @@ del arr[0:4]                                             # Removing appended ele
 ls.sort()                                                # Sorting two list first in ascending and second in descending. 
 arr.sort(reverse = True)
 print(ls+arr)                                            # Combining both of them.
+
+OR
+
+'''
+a=list(map(int,input("Enter array ").split()))
+x=a[:len(a)//2]
+y=a[len(a)//2:] 
+x.sort() 
+y.sort(reverse=True) 
+print("Resultant array",*(x+y))
+'''
