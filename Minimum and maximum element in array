@@ -1,0 +1,3 @@
+size = int(input())
+arr = list(map(int,input().strip().split()))[0:size]
+print(min(arr),max(arr))
