@@ -1,0 +1,4 @@
+num  = int(input("Enter size:"))
+arr = list(map(int,input().strip().split()))[:num]       # Input of elements of array in range 0:n.
+arr.sort()                                               # Sorting in ascending order.
+print(arr[1])                                            # So 2nd min. is 2nd element.
