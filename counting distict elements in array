@@ -1,0 +1,5 @@
+num = int(input())
+arr = list(map(int,input().strip().split()))[0:num]
+x = set(arr)                                                 # Directly converted into set as set dos not allow distict elements. 
+print(x)
+print(len(x))                                                # And calculated length of set.
