@@ -1,0 +1,9 @@
+num = int(input())
+arr = list(map(int,input().strip().split()))[0:num]
+ls = []
+for i in range (len(arr)):
+    p = arr.count(arr[i])
+    ls.append(p)
+x=list(dict.fromkeys(arr))
+for i in x:
+    print("\n {} occurs {} time(s)".format(i,arr.count(i)))
