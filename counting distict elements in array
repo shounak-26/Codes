@@ -1,5 +1,15 @@
 num = int(input())
 arr = list(map(int,input().strip().split()))[0:num]
-x = set(arr)                                                 # Directly converted into set as set dos not allow distict elements. 
+x = set(arr)                                                 # Directly converted into set as set dos not allow repeated elements. 
 print(x)
 print(len(x))                                                # And calculated length of set.
+
+# OR
+
+'''
+num = int(input())
+arr = list(map(int,input().strip().split()))[0:num]
+arr=list(dict.fromkeys(arr))
+print(arr)
+
+'''
