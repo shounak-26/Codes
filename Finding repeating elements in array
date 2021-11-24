@@ -1,0 +1,7 @@
+num = int(input())
+arr = list(map(int,input().strip().split()))[0:num]            # Input of array.
+ls = []                                                        # Empty list to append.
+for i in range (len(arr)):
+    if arr.count(i)>1:                                         # Cheaking count of element if greater then 1.
+        ls.append(i)                                           # Appending in ls.
+print(ls) 
