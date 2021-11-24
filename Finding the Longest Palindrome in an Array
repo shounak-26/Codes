@@ -1,0 +1,11 @@
+num = int(input())
+arr = list(map(int,input().strip().split()))[0:num]        # Taking input of array
+ls =[]                                                     # Creating another list
+for i in range (len(arr)):
+    str1 = str(arr[i])                                     # Converting all elements in string and storing them.
+    str2 = str1[::-1]                                      # Creating new string to store reverse.
+    str1 = int(str1)                                       # Again converting to int so that we can find directly max elements from list.
+    str2 = int(str2)
+    if str1 == str2:                                       # Only appending those elements in ls which is palidrome
+        ls.append(str1)
+print(max(ls))                                             # Printing maximum of that list.
