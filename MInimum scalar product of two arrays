@@ -1,0 +1,9 @@
+num = int(input())
+arr1 = list(map(int,input().strip().split()))[0:num]
+arr2 = list(map(int,input().strip().split()))[0:num]
+arr1.sort()
+arr2.sort(reverse = True)
+p = 0
+for i in range (0,len(arr1)):
+    p += arr1[i]*arr2[i]
+print(p)
